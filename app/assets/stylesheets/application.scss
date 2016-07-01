@@ -1,2 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.alejandro {
+  background-image: image-url("alejandro.jpg");
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
