@@ -20,6 +20,7 @@
  gem 'sass-rails', '>= 3.2'
  gem 'figaro'
  gem 'pry'
+ gem 'gmaps4rails'
 
  group :development, :test do
    gem 'byebug'
