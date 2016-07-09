@@ -5,17 +5,14 @@ class LocationsController < ApplicationController
   def index
     if params[:search].present?
       @locations = Location.near(params[:search], 50)
-      @hash = Gmaps4rails.build_markers(@locations) do |location, marker|
-        marker.lat location.latitude
-        marker.lng location.longitude
-      end
     else
       @locations = Location.all
+    end
       @hash = Gmaps4rails.build_markers(@locations) do |location, marker|
         marker.lat location.latitude
         marker.lng location.longitude
+        marker.infowindow location.name
       end
-    end
   end
 
   # GET /locations/1
@@ -65,6 +62,6 @@ class LocationsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def location_params
-      params.require(:location).permit(:address, :latitude, :longitude)
+      params.require(:location).permit(:name, :address, :latitude, :longitude)
     end
 end

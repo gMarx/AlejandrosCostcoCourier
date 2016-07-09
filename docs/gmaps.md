@@ -24,3 +24,8 @@ user geocoder to add in two locations:
 
 
   ---lots of stuff -- watch youtube video https://www.youtube.com/watch?v=R0l-7en3dUw
+
+  add column Name to Location model
+    rails g migration AddNameToLocations name:string
+  port Name attribute on marker info window
+

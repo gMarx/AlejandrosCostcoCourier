@@ -9,6 +9,7 @@
 <table>
   <thead>
     <tr>
+      <th>Name</th>
       <th>Address</th>
       <th>Distance</th>
       <th>Latitude</th>
@@ -27,6 +28,7 @@
   <tbody>
     <% @locations.each do |location| %>
       <tr>
+        <td><%= location.name %></td>
         <td><%= location.address %></td>
         <td><%= location.distance_from(params[:search]).round(2) if params[:search] %></td>
         <td><%= location.latitude %></td>
