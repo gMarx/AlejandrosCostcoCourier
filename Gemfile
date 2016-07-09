@@ -20,7 +20,9 @@
  gem 'sass-rails', '>= 3.2'
  gem 'figaro'
  gem 'pry'
+ gem 'geocoder'
  gem 'gmaps4rails'
+ gem 'awesome_print'
 
  group :development, :test do
    gem 'byebug'
