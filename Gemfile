@@ -23,6 +23,7 @@
  gem 'geocoder'
  gem 'gmaps4rails'
  gem 'awesome_print'
+ gem 'underscore-rails'
 
  group :development, :test do
    gem 'byebug'

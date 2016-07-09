@@ -20,4 +20,7 @@ user geocoder to add in two locations:
   Then we use the distance from to ensure the delivery destination is within XX miles of Both addresses (check that 2 addresses are returned)
 
 
-  rails g nifty:scaffold location address:string latitude:float longitude:float
+  rails g scaffold location address:string latitude:float longitude:float
+
+
+  ---lots of stuff -- watch youtube video https://www.youtube.com/watch?v=R0l-7en3dUw
