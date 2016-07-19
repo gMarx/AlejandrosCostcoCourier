@@ -3,6 +3,8 @@ class LocationsController < ApplicationController
 
   # GET /locations
   def index
+    @city = request.location.city
+
     if params[:search].present?
       @locations = Location.near(params[:search], 50)
     else
